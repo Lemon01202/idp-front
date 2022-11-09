@@ -1,0 +1,27 @@
+.layout {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: aliceblue;
+}
+
+.lightTheme {
+  background: rgba(256, 256, 256, 0.9);
+  color: #2d3436;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: rgba(256, 256, 256, 0.1);
+}
+
+.icon {
+  &Back {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+}

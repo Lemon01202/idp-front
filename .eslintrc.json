@@ -1,3 +1,35 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "react/jsx-props-no-spreading": [
+      "error",
+      {
+        "custom": "ignore",
+        "exceptions": ["input"]
+      }
+    ],
+    "react/prop-types": ["off'"],
+    "react/no-array-index-key": ["off"],
+    "react/no-danger": ["off"],
+    "no-console": [
+      "error",
+      {
+        "allow": ["warn", "error"]
+      }
+    ],
+    "linebreak-style": ["off"],
+    "operator-linebreak": [
+      "error",
+      "after",
+      { "overrides": { "?": "before", ":": "before" } }
+    ],
+    "@typescript-eslint/indent": ["off"],
+    "object-curly-newline": ["off"],
+    "implicit-arrow-linebreak": ["off"],
+    "no-confusing-arrow": ["off"],
+    "react/jsx-indent": ["off"],
+    "react/jsx-one-expression-per-line": ["off"],
+    "react/jsx-curly-newline": ["off"],
+    "function-paren-newline": ["off"]
+  }
 }
